@@ -1,0 +1,9 @@
+{
+  
+  "appUnderMaintenance" : "l'application est en maintenance",
+  "movies":"movies",
+  "wish":"favoris",
+  "noInternet":"pas de connexion internet",
+  "maintenance":"l'application est en maintenance",
+  "problem":"Problème"    
+}
