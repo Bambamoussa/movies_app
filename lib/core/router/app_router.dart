@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:movie_app/core/router/app_name.dart';
-import 'package:movie_app/features/movies/pages/movies_page.dart';
-import 'package:movie_app/features/movies/pages/wish_page.dart';
+import 'package:movie_app/features/movies/presentation/pages/movies_page.dart';
+import 'package:movie_app/features/movies/presentation/pages/wish_page.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class RouteGenerator {

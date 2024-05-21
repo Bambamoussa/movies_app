@@ -46,7 +46,12 @@ dependencies:
     sdk: flutter
   intl: any
   google_fonts: 6.1.0
+  riverpod:
+  # the annotation package containing @riverpod
+  riverpod_annotation:
   permission_handler: ^11.3.1
+  build_runner: ^2.4.9
+  flutter_riverpod: ^2.5.1
 
 dev_dependencies:
   flutter_test:
@@ -59,7 +64,11 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
   json_serializable: ^6.7.1
-  build_runner: ^2.4.8
+  riverpod_generator:
+  # riverpod_lint makes it easier to work with Riverpod
+  riverpod_lint:
+  # import custom_lint too as riverpod_lint depends on it
+  custom_lint:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
