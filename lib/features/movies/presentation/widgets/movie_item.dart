@@ -10,17 +10,15 @@ class MovieItem extends ConsumerWidget {
   const MovieItem({
     super.key,
     required this.movie,
-    required this.wishList,
   });
 
   final MovieEntity movie;
-  final List<MovieEntity> wishList;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final postPath = ApiConstants.getPath(movie.poster);
     final movieAsync = ref.watch(getMoviesFavorisProvider);
-    
+
     final isWish = movieAsync.value?.firstWhereOrNull(
               (element) => element.id == movie.id,
             ) ==

@@ -5,12 +5,10 @@ import 'package:movie_app/features/movies/presentation/widgets/movie_item.dart';
 class MoviesList extends StatelessWidget {
   const MoviesList({
     required this.movieList,
-    
     super.key,
   });
 
   final List<MovieEntity> movieList;
-  
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +16,6 @@ class MoviesList extends StatelessWidget {
       itemCount: movieList.length,
       itemBuilder: (context, index) => MovieItem(
         movie: movieList[index],
-        wishList: movieList,
       ),
     );
   }
