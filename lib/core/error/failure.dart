@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 part 'failure.freezed.dart';
 
 @freezed
@@ -20,11 +18,4 @@ class Failure with _$Failure {
   const factory Failure.server({String? message}) = FailureServer;
 
   const Failure._();
-
-  String? errorMessageWidget(BuildContext context) {
-    if (this is FailureServer) {
-      return AppLocalizations.of(context)?.appUnderMaintenance;
-    }
-    return null;
-  }
 }
